@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # QN3 AquaSmart Meter - Project 3
 
 ## Five classes
@@ -26,6 +27,8 @@ One test closes the valve by using more credit than is available, then loads a t
 ## Encapsulation
 
 Encapsulation is applied because the important data is private. This prevents another class from setting a wrong balance or opening the valve without buying credit. It helps KIS keep billing honest and prevents free water from being dispensed by mistake.
+=======
+>>>>>>> ab8745fa5512683ac827817fd6455bb894aa51d9
 
 ## NetBeans
 
