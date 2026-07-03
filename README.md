@@ -2,11 +2,14 @@
 
 ## Five classes
 
-1. `Customer` - represents the water user. Collaborator: `TokenPayment`.
-2. `SmartMeter` - checks credit and opens or closes water. Collaborator: `Customer`.
-3. `TokenPayment` - represents water credit bought by mobile money. Collaborator: `SmartMeter`.
+1. `WaterCustomer` - represents the water user. Collaborator: `SmartMeter`.
+2. `SmartMeter` - checks credit and opens or closes water. Collaborator: `WaterCustomer`.
+3. `MobileMoneyToken` - represents water credit bought by mobile money. Collaborator: `SmartMeter`.
 4. `ConsumptionLog` - records water usage events. Collaborator: `SmartMeter`.
 5. `LeakDetector` - checks abnormal continuous flow. Collaborator: `ConsumptionLog`.
+6. `DisconnectionRecord` - tracks how long a meter stays disconnected. Collaborator: `SmartMeter`.
+
+These classes are implemented as separate simple Java classes in the `src` folder. This version uses different names from the other projects while still answering the same question.
 
 ## Program answer
 
